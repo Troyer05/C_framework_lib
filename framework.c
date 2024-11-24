@@ -5,6 +5,9 @@
 
 #define INITIAL_BUFFER_SIZE 64
 
+/**
+ * Function to clear console
+ */
 void CLS() {
     #ifdef _WIN32
         system("cls");
@@ -13,6 +16,9 @@ void CLS() {
     #endif
 }
 
+/**
+ * Function to clear console after user hittet ENTER
+ */
 void CLS_ENTER() {
     sleep(2);
     getchar();
@@ -24,6 +30,12 @@ void CLS_ENTER() {
     #endif
 }
 
+/**
+ * Function to get user Inputs (desgined to be used in a loop for multi inputs)
+ * 
+ * @param int line Line Number (in for loop it would be i+1)
+ * @return char* the user input
+ */
 char* userInput(int line) {
     size_t bufferSize = INITIAL_BUFFER_SIZE;
     char* input = (char*)malloc(bufferSize);
@@ -59,6 +71,11 @@ char* userInput(int line) {
     return input;
 }
 
+/**
+ * Function to get simple oneline user input
+ * 
+ * @return char* the user input
+ */
 char* getInput() {
     size_t bufferSize = INITIAL_BUFFER_SIZE;
     char* input = (char*)malloc(bufferSize);
