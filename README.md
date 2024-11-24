@@ -1,2 +1,2 @@
 # C_framework_lib
-Simple Functions as library in framework style
+This is a C library that contains some functionalities as simple functions just like a framework.
