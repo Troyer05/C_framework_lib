@@ -5,5 +5,5 @@ This is a C library that contains some functionalities as simple functions just 
 # Functions 
 - CLS();
 - CLS_ENTER();
-- getUserInput(int line);
+- userInput(int line);
 - getInput();
